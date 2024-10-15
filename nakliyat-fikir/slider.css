@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .counter-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+.carousel{
+    position: relative;
+    background: #000116;
+    width: 100vw;
+    min-height: 100vh;
+    /* margin: 20px; */
+    border-radius: 10px;                           
+}
+.carousel .carousel_item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.carousel .carousel_item img{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+ 
+    
+}
+.carousel .carousel_item .carousel-body{
+    position: absolute;
+    color: #222;
+    background: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 195px;
+    /* margin-top: 50px; */
+    margin-left: 115px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+.carousel .carousel_item .carousel-body h2{
+    font-size: 2em;
+    font-weight: 800;
+
+}
+.carousel .carousel_item .carousel-body p{
+    font-size: 1em;
+    font-weight: 400;
+}
+.carousel-buttns{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.carousel:hover .carousel-buttns{
+    opacity: 1;
+}
+.carousel-prev, .carousel-next{
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(255, 255, 255, 0.8 );
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel-prev{
+    margin-top: 233px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.carousel-next{
+    margin-top: 233px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.carousel-buttns-visibility{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+.carousel-buttns-visibility .carousel-img{
+    z-index: 999;
+    background:0 5px 25px rgb(1 1 1 / 20%);
+}
+.carousel-buttns-visibility .carousel-img.active{
+    background: #4285F4;
+}
+.carousel .carousel_item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.carousel .carousel_item.active {
+    clip-path:circle(150% at 0 50%) ;
+    transition: 2s;
+}
+@media (max-width:900px) {
+    .carousel{
+        position: relative;
+        background: #000116;
+        width: 100vw;
+        min-height: 90vh;
+        /* margin: 20px; */
+        
+    }
+    /* .carousel .carousel_item img:first-child{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      object-position: center;
+    
+    } */
+    .carousel .carousel_item .carousel-body{
+        position: relative;
+        width: 80%;
+        margin-top: 155px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    /* .carousel .carousel_item img{
+        width: 100%;
+        height: auto;
+    } */
+}
+
+  .counter-container{
+    background: url("images/bg-2.jpeg") no-repeat;
+    min-height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+  }
+  .counter-container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+  }
+  .counter-container .content-item{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #4285F4;
+    padding: 25px;
+    border-radius: 15px;
+  }
+  .counter-container .content-item .counter-box{
+    border: 1px dashed rgba(255,255,255,0.6);
+    width: calc(25% - 30px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .content-item .counter-box .counter-icon{
+    font-size: 38px;
+    color: #e6e6e6;
+  }
+  .content-item .counter-box .counter{
+    font-size: 33px;
+    font-weight: 500;
+    color: #f2f2f2;
+    font-family: sans-serif;
+  }
+  .content-item .counter-box .counter-text{
+    font-weight: 400;
+    color: #ccc;
+  }
+  @media screen and (max-width: 1036px) {
+    .counter-container{
+      padding: 50px 50px 0 50px;
+    }
+    .counter-container .content-item .counter-box{
+      width: calc(50% - 30px);
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .counter-container .content-item .counter-box{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .wrapper{
+      padding: 20px;
+    }
+    .counter-container{
+      padding: 30px 20px 0 20px;
+    }
+  }
+ 
+.section-container {
+	display: grid;
+	place-items: center;
+	height: 300px;
+
+}
+.section-header{
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 25px;
+    color: #000;
+ 
+}
+.section-header:after{
+    content: '';
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(10% - 20px);
+    background: #fff;
+  
+}
+.section-header span {
+	display: block;
+	font-size: 15px;
+	font-weight: 300;
+  
+}
+.testimonials{
+  
+    max-width: 100%;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15px;
+}
+.profile{
+  
+    margin-bottom: 30px;
+    text-align: center;    
+}
+.img-area {
+  
+	margin: 0 15px 15px 15px;
+}
+.img-area img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 7px solid blueviolet;
+}
+.content{
+  
+    font-size: 18px;
+}
+.content p {
+	text-align: justify;
+}
+.content p span {
+	font-size: 48px;
+  
+	padding-right: 20px;
+    color: blueviolet;
+}
+.socials i {
+	margin-right: 25px;
+}
+.bio h4 {
+	font-family: 'Berkshire Swash', cursive;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: blueviolet;
+}
+.carousel{
+ 
+  background: red;
+
+}

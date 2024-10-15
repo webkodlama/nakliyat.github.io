@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="k.bootstrap/bootstrap.min.css">
+    <title>Bootstrap Example</title>
+
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+<!--     
+        <div class="container-fluid bg-tertiary px-5  d-none d-lg-block">
+            <div class="col-lg-8 text-center text-lg-start mb-2  mb-lg-0">
+                <nav class="nav nav-pills flex-column flex-sm-row mt-0">
+                    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aktif</font></font></a>
+                    
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Daha uzun gezinme bağlantısı</font></font></a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bağlantı</font></font></a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bağlantı</font></font></a>
+                  </nav>          
+            </div>
+        </div> -->
+        <div class="container-fluid bg-tertiary px-5">
+         <div class="row gx-0">
+          <div class="col-12 col-xl-8 col-lg-8 col-md-8 min-vh-100 text-center pt-4 p-b-1 p-2">
+         <div class=" align-items-center">
+          <a href="slider.htm" class="text-dark text-decoration-none">
+            <!-- icon koy -->
+            <span class="fs-4">Haskaya Karaoser</span>
+          </a>
+          <hr class="text-dark">
+          <ul class="nav nav-pills flex-column mb-auto pb-5">
+            <li class="nav-item">
+              <a href="" class="nav-link active text-dark">
+                <!-- icon koy -->
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark"> <!--yazı rengini burdan değiştir-->
+                <!-- icon koy -->
+                <span>About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">
+                <!-- icon koy -->
+                <span>Services</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">
+                <!-- icon koy -->
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+         </div>
+          </div>   
+
+          <div class=" align-items-center">
+            <!-- Galeri Resimleri -->
+            <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+              <img src="resim1.jpg" class="img-fluid rounded gallery-image" alt="Resim 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeImage('resim1.jpg')">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+              <img src="resim2.jpg" class="img-fluid rounded gallery-image" alt="Resim 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeImage('resim2.jpg')">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+              <img src="resim3.jpg" class="img-fluid rounded gallery-image" alt="Resim 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeImage('resim3.jpg')">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+              <img src="resim4.jpg" class="img-fluid rounded gallery-image" alt="Resim 4" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeImage('resim4.jpg')">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+              <img src="resim5.jpg" class="img-fluid rounded gallery-image" alt="Resim 5" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeImage('resim5.jpg')">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+              <img src="resim6.jpg" class="img-fluid rounded gallery-image" alt="Resim 6" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeImage('resim6.jpg')">
+            </div>
+          </div>
+         </div>
+        </div>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img id="modalImage" src="" class="img-fluid w-100" alt="Galeri Resmi">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          // Resim değişim fonksiyonu
+          function changeImage(src) {
+            document.getElementById('modalImage').src = src;
+          }
+        </script>
+      
+          <div class="col-8 "></div>
+       
+        </div>
+        
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4  col- min-vh-100 bg-tertiary">
+      <div class="pt-4 pb-1 px-2">
+         <a href="slider.htm" class="text-dark text-decoration-none">
+          <!-- icon koy -->
+           <span class="fs-4 d-none d-sm-inline">Haskaya Karaoser</span>
+        </a>
+      </div>
+      <hr class="text-dark">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="" class="nav-link active"> 
+            <!-- icon koy -->
+             <span class="d-none d-sm-inline">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="" class="nav-link ">  <!--yazı rengini burdan değiştir-->
+            <!-- icon koy -->
+             <span class="d-none d-sm-inline">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="" class="nav-link"> 
+            <!-- icon koy -->
+             <span class="d-none d-sm-inline">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="" class="nav-link"> 
+            <!-- icon koy -->
+             <span class="d-none d-sm-inline">Home</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+   
+      
+    <!-- End Example Code -->
+  <script src="k.bootstrap/bootstrap.bundle.min.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="k.bootstrap/bootstrap.min.css">
+</head>
+<style>
+    .gallery-item{
+width: 100%;
+height: 290px;
+}
+.gallery{
+	background-color: #dbddf1;
+	padding: 80px 0;
+}
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+    height: 500px;
+}
+
+</style>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light fixed-top ">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hizmetlerimiz
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Taşımacılık</a></li>
+              <li><a class="dropdown-item" href="#">Lojistik</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Diğer Hizmetler</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">İletişim</a>
+          </li>
+        </ul>
+        <a href="tel:+905322919836" class="btn btn-danger d-none d-lg-block">Bize Ulaşın</a>
+              <a href="tel:+905322919836" class="btn btn-danger d-lg-none w-100 mt-3">Bize Ulaşın</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+  <div class="container-fluid" style="margin-top: 95px;">
+    <div class="row">
+        <!-- Yatay Menü (Responsive Ayarlamalar Eklendi) -->
+        <div class="col-12 mb-3">
+            <div class="list-group list-group-horizontal d-flex justify-content-center" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+            </div>
+        </div>
+        <!-- Alttaki İçerik (Responsive Ayarlamalar Eklendi) -->
+        <div class="col-12 my-5">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Home Content</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Profile Content</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Messages Content</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Settings Content</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="galery ">
+    <div class="container lg">
+        <div class="row gy-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
+            <div class="col">
+                <img src="WhatsApp Image 2024-10-09 at 01.03.25 (1).jpeg" alt="" class="img-fluid img-thumbnail gallery-item ">
+                <div class="card">
+                  <div class="card-body">
+           <small>         This is some text within a card body.</small>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+                <img src="WhatsApp Image 2024-10-09 at 01.03.25 (2).jpeg" alt="" class="img-fluid img-thumbnail gallery-item">
+            </div>
+            <div class="col">
+                <img src="WhatsApp Image 2024-10-09 at 01.03.27 (3).jpeg" alt="" class="img-fluid img-thumbnail gallery-item">
+            </div>
+            <div class="col">
+                <img src="WhatsApp Image 2024-10-09 at 01.03.28 (4).jpeg" alt="" class="img-fluid img-thumbnail gallery-item">
+            </div>
+            <div class="col">
+                <img src="1920-delivery-truck-loaded-with-cardboard-boxes-logistics-warehouse-online-delivery-service-generative-ai.jpeg" alt="" class="img-fluid img-thumbnail gallery-item">
+            </div>
+            <div class="col">
+                <img src="truck-with-white-trailer-that-says-scania-side.jpg" alt="" class="img-fluid img-thumbnail gallery-item">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>merh</h4>
+        
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="WhatsApp Image 2024-10-09 at 01.03.25 (1).jpeg" alt="modal-img" class="modal-img">
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<script src="script/main.js"></script>
+      <script src="k.bootstrap/bootstrap.bundle.min.js"></script>
+      
+</body>
+</html>

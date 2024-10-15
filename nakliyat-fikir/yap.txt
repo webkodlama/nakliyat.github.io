@@ -1,0 +1,14 @@
+         <p class="d-flex flex-row ">
+                          <a href="" class="btn bg-success text-white text-decoration-none"><i class='bx bxs-badge-check'></i>Güvenilir</a>
+                          <a href="" class="btn bg-success text-white text-decoration-none"><i class='bx bx-shield-quarter'></i> Garantili</a>
+                          <a href="" class="btn bg-success text-white text-decoration-none"><i class='bx bx-time'></i> Zamanında</a>
+                        </p>
+resmin altına 3tane card yapıştır
+
+
+      @media (min-width:412px) {
+       .resim, .video{
+width:45%;
+height: 35%;
+        }
+      }
